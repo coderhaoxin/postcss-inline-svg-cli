@@ -1,0 +1,21 @@
+{
+  "name": "postcss-inline-svg-cli",
+  "private": true,
+  "version": "1.0.0",
+  "description": "postcss-inline-svg cli",
+  "main": "index.js",
+  "bin": {
+    "inline-svg": "index.js"
+  },
+  "repository": "coderhaoxin/postcss-inline-svg-cli",
+  "keywords": [
+    "postcss-inline-svg",
+    "cli"
+  ],
+  "author": "haoxin",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "fs-readdir-recursive": "^1.0.0"
+  }
+}
