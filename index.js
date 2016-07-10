@@ -22,6 +22,7 @@ const opts = {
 }
 
 const files = readdir(opts.dir)
+  .filter(p => path.extname(p) === '.svg')
 
 const file = fs.createWriteStream(path.resolve(opts.out))
 
