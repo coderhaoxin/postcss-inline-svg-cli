@@ -18,7 +18,7 @@ program
 const opts = {
   dir: program.dir || 'asset',
   out: program.out || 'inline-svg.css',
-  prefix: program.prefix || '.inline-svg'
+  prefix: program.prefix || '.inline-svg-'
 }
 
 const files = readdir(opts.dir)
