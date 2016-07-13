@@ -18,7 +18,7 @@ program
 const opts = {
   dir: program.dir || 'asset',
   out: program.out || 'inline-svg.css',
-  prefix: program.prefix || '.inline-svg-'
+  prefix: program.prefix || '.inline-svg'
 }
 
 const files = readdir(opts.dir)
@@ -27,7 +27,7 @@ const files = readdir(opts.dir)
 const file = fs.createWriteStream(path.resolve(opts.out))
 
 files.forEach(p => {
-  const suffix = p.replace(/\//g, '-').replace('.svg', '')
+  const suffix = '.' + p.replace(/\//g, '-').replace('.svg', '')
 
   const css = `
 ${opts.prefix}${suffix} {
