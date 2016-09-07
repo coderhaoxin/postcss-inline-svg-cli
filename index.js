@@ -31,7 +31,7 @@ files.forEach(p => {
 
   const css = `
 ${opts.prefix}${suffix} {
-  background: svg-load('${p}');
+  background: svg-load('${p}') center/contain no-repeat;
 }
 `
 
